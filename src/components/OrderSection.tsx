@@ -25,10 +25,18 @@ const OrderSection = ({ isArabic }: OrderSectionProps) => {
   });
 
   // --- كود المؤقت ---
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, });
+   const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
   useEffect(() => {
-    const offerEndDate = new Date();
-    offerEndDate.setDate(offerEndDate.getDate() + 11);
+    // !! أهم تعديل: تحديد تاريخ انتهاء ثابت ومحدد !!
+    // العرض سينتهي يوم 7 سبتمبر 2025 الساعة 11:59 مساءً
+    const offerEndDate = new Date('2025-09-07T23:59:59');
+
     const timer = setInterval(() => {
       const difference = +offerEndDate - +new Date();
       if (difference > 0) {
@@ -39,9 +47,12 @@ const OrderSection = ({ isArabic }: OrderSectionProps) => {
           seconds: Math.floor((difference / 1000) % 60),
         });
       } else {
+        // عندما ينتهي الوقت، يتم تصفير العدادات
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         clearInterval(timer);
       }
     }, 1000);
+
     return () => clearInterval(timer);
   }, []);
   // --- نهاية كود المؤقت ---
