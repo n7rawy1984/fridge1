@@ -24,17 +24,13 @@ const Header = ({ isArabic, toggleLanguage, scrollToSection }: HeaderProps) => {
   const menuItems = {
     ar: [
       { name: 'الرئيسية', id: 'hero' },
-      // --- بداية التعديل رقم 3 ---
-      { name: 'المميزات', id: 'solution' }, // تم تغيير 'features' إلى 'solution'
-      // --- نهاية التعديل رقم 3 ---
-      { name: 'آراء العملاء', id: 'testimonials' }, // هذا كان صحيحًا بالفعل
+      { name: 'المميزات', id: 'solution' },
+      { name: 'آراء العملاء', id: 'testimonials' },
       { name: 'اطلب الآن', id: 'order' },
     ],
     en: [
       { name: 'Home', id: 'hero' },
-      // --- بداية التعديل رقم 3 (للغة الإنجليزية) ---
-      { name: 'Features', id: 'solution' }, // تم تغيير 'features' إلى 'solution'
-      // --- نهاية التعديل رقم 3 ---
+      { name: 'Features', id: 'solution' },
       { name: 'Reviews', id: 'testimonials' },
       { name: 'Order Now', id: 'order' },
     ]
@@ -55,22 +51,16 @@ const Header = ({ isArabic, toggleLanguage, scrollToSection }: HeaderProps) => {
           
           {/* الشعار */}
           <div 
-            className={`flex items-center transition-all duration-300 mt-1 ${
-              isScrolled ? 'transform scale-90' : ''
-            }`}
-            // --- بداية التعديل رقم 1 ---
-            onClick={() => scrollToSection('order')} // تم تغيير 'hero' إلى 'order'
-            // --- نهاية التعديل رقم 1 ---
+            className="flex items-center cursor-pointer"
+            onClick={() => scrollToSection('order')}
           >
+            {/* === بداية التعديل المطلوب === */}
             <img 
               src={logo} 
               alt="Hit&Get Logo" 
-              className={`h-28 md:h-15 w-auto cursor-pointer transition-all duration-800 ${
-                isScrolled 
-                  ? 'opacity-80 hover:opacity-100 animate-pulse' 
-                  : 'opacity-100 hover:animate-spin-slow'
-              }`}
+              className="h-14 w-auto transition-all duration-300" // تم تصغير الحجم بشكل كبير
             />
+            {/* === نهاية التعديل المطلوب === */}
           </div>
 
           {/* القائمة - الشاشات الكبيرة */}
@@ -120,7 +110,7 @@ const Header = ({ isArabic, toggleLanguage, scrollToSection }: HeaderProps) => {
                   scrollToSection(item.id);
                   setIsMenuOpen(false);
                 }}
-                className="block w-full text-right py-3 text-foreground hover:text-primary transition-colors"
+                className={`block w-full py-3 text-foreground hover:text-primary transition-colors ${isArabic ? 'text-right' : 'text-left'}`}
               >
                 {item.name}
               </button>

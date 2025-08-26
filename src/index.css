@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --- بداية الإصلاح المطلوب --- */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+/* --- نهاية الإصلاح المطلوب --- */
+
 /* تصميم النظام للثلاجة المحمولة - ألوان وتدرجات احترافية */
 
 @layer base {
