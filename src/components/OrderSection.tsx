@@ -124,28 +124,31 @@ const OrderSection = ({ isArabic }: OrderSectionProps) => {
             <span className="font-bold">عرض الإطلاق الخاص - ينتهي قريباً!</span>
           </div>
           <h2 className="text-4xl mt-4 md:text-6xl font-black text-foreground mb-6">
-            خصم 
-            <span className="text-red-500 bg-yellow-300 px-4 py-2 rounded-xl mx-2 animate-bounce">25%</span>
-            + توصيل مجاني!
-          </h2>
+  خصم 
+  <span className="text-red-500 bg-yellow-300 px-4 py-2 rounded-xl mx-2 animate-bounce">25%</span>
+  {/* === بداية التعديل المطلوب === */}
+  <br className="md:hidden" /> {/* هذا السطر سيضيف فاصل سطر على الموبايل فقط */}
+  + توصيل مجاني!
+  {/* === نهاية التعديل المطلوب === */}
+</h2>
           <p className="text-xl mt-9 text-muted-foreground mb-8">
             لكل الإمارات السبع - عرض محدود لأول 100 عميل فقط!
           </p>
 
           <div className="flex justify-center gap-4 mb-8">
-            <div className="bg-red-500 text-white rounded-lg p-4 text-center min-w-[80px]">
+            <div className="bg-red-500 text-white rounded-lg p-3 text-center min-w-[80px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.days)}</div>
               <div className="text-xs">أيام</div>
             </div>
-            <div className="bg-red-500 text-white rounded-lg p-4 text-center min-w-[80px]">
+            <div className="bg-red-500 text-white rounded-lg p-3 text-center min-w-[80px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.hours)}</div>
               <div className="text-xs">ساعة</div>
             </div>
-            <div className="bg-red-500 text-white rounded-lg p-4 text-center min-w-[80px]">
+            <div className="bg-red-500 text-white rounded-lg p-3 text-center min-w-[80px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.minutes)}</div>
               <div className="text-xs">دقيقة</div>
             </div>
-             <div className="bg-red-500 text-white rounded-lg p-4 text-center min-w-[80px]">
+             <div className="bg-red-500 text-white rounded-lg p-3 text-center min-w-[80px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.seconds)}</div>
               <div className="text-xs">ثانية</div>
             </div>
