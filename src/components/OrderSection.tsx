@@ -135,19 +135,19 @@ const OrderSection = ({ isArabic }: OrderSectionProps) => {
           </p>
 
           <div className="flex justify-center gap-4 mb-8">
-            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[70px]">
+            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[55px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.days)}</div>
               <div className="text-xs">أيام</div>
             </div>
-            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[70px]">
+            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[55px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.hours)}</div>
               <div className="text-xs">ساعة</div>
             </div>
-            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[70px]">
+            <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[55px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.minutes)}</div>
               <div className="text-xs">دقيقة</div>
             </div>
-             <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[70px]">
+             <div className="bg-red-500 text-white rounded-lg p-2 text-center min-w-[55px]">
               <div className="text-2xl font-bold">{formatNumber(timeLeft.seconds)}</div>
               <div className="text-xs">ثانية</div>
             </div>
