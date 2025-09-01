@@ -46,8 +46,8 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
       title1: "Hit&Get",
       title2: "Portable",
       title3: "Cooler",
-      subtitle: "!Summer Cool & Winter Warm at the Touch of a Button",
-      description: "The revolutionary solution that ends all food and drink problems on your trips. Advanced technology in an elegant and portable design",
+      subtitle: "Summer Cool & Winter Warm at the Touch of a Button!",
+      description: "The revolutionary solution that ends all food and drink problems on your trips. Advanced technology in an elegant and portable design.",
       revolutionaryTitle: "Revolutionary 2-in-1 System",
       revolutionaryDesc: "First time in the region - a cooler that cools and heats with the same device! Instant switching between cooling and heating as needed",
       exclusiveText: "Exclusive Patent",
@@ -78,7 +78,7 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
   const text = content[isArabic ? 'ar' : 'en'];
   return (
     <section className="py-20 bg-gradient-to-b from-muted/30 to-background" id="solution">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" dir={isArabic ? 'rtl' : 'ltr'}>
         
         {/* العنوان */}
         <div className="text-center mb-16">
@@ -123,8 +123,8 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
               <div className="absolute top-1/4 left-8 transform -translate-y-1/2 mt-10">
                 <div className="bg-white rounded-2xl p-4 shadow-xl border-2 border-primary/20 ">
                   <div className="text-center">
-                    <div className="text-primary font-black text-lg mb-1">COOL/HOT</div>
-                    <div className="text-xs  text-gray-600">مفتاح التحويل</div>
+                    <div className="text-primary font-black text-lg mb-1"> {isArabic ? 'ساخن | بارد' : 'COOL/HOT'}</div>
+                    <div className="text-xs  text-gray-600">{isArabic ? 'مفتاح التحويل' : 'Switch key'}</div>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
                 <div className="bg-secondary text-white rounded-2xl p-4 shadow-xl">
                   <div className="text-center">
                     <div className="font-black text-xl mb-1">5° → 55°</div>
-                    <div className="text-xs opacity-90">وعاء محكم</div>
+                    <div className="text-xs opacity-90">{isArabic ? 'وعاء محكم' : 'Airtight container'}</div>
                   </div>
                 </div>
               </div>

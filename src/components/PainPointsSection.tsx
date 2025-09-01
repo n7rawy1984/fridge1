@@ -43,10 +43,10 @@ const PainPointsSection = ({ isArabic }: PainPointsSectionProps) => {
       tempDesc: "كافية لإفساد طعامك ومشروباتك في دقائق!"
     },
     en: {
-      title: "?Tired of These Problems",
-      subtitle: "!Long summer trips are no longer a problem",
-      transition: "?What if we told you there's a simple solution",
-      transitionDesc: "One solution that solves all these problems and makes your trips more comfortable and enjoyable",
+      title: "Tired of These Problems?",
+      subtitle: "Long summer trips are no longer a problem!",
+      transition: "What if we told you there's a simple solution?",
+      transitionDesc: "One solution that solves all these problems and makes your trips more comfortable and enjoyable...",
       painPoints: [
         {
           icon: <Thermometer className="w-8 h-8" />,
@@ -74,7 +74,7 @@ const PainPointsSection = ({ isArabic }: PainPointsSectionProps) => {
         }
       ],
       tempWarning: "Temperature inside car in summer",
-      tempDesc: "!Enough to spoil your food and drinks in minutes"
+      tempDesc: "Enough to spoil your food and drinks in minutes!"
     }
   };
 
@@ -82,7 +82,7 @@ const PainPointsSection = ({ isArabic }: PainPointsSectionProps) => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-background to-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" dir={isArabic ? 'rtl' : 'ltr'}>
         
         {/* العنوان */}
         <div className="text-center mb-16">

@@ -59,7 +59,7 @@ const OrderSection = ({ isArabic }: OrderSectionProps) => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const offerEndDate = new Date('2025-09-07T23:59:59');
+    const offerEndDate = new Date('2025-09-12T23:59:59');
     const timer = setInterval(() => {
       const difference = +offerEndDate - +new Date();
       if (difference > 0) {
