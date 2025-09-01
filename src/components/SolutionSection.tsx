@@ -46,10 +46,10 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
       title1: "Hit&Get",
       title2: "Portable",
       title3: "Cooler",
-      subtitle: "Summer Cool & Winter Warm at the Touch of a Button!",
-      description: "The revolutionary solution that ends all food and drink problems on your trips. Advanced technology in an elegant and portable design.",
+      subtitle: "!Summer Cool & Winter Warm at the Touch of a Button",
+      description: "The revolutionary solution that ends all food and drink problems on your trips. Advanced technology in an elegant and portable design",
       revolutionaryTitle: "Revolutionary 2-in-1 System",
-      revolutionaryDesc: "First time in the region - a cooler that cools and heats with the same device! Instant switching between cooling and heating as needed.",
+      revolutionaryDesc: "First time in the region - a cooler that cools and heats with the same device! Instant switching between cooling and heating as needed",
       exclusiveText: "Exclusive Patent",
       features: [
         {

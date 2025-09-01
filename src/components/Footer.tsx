@@ -32,7 +32,7 @@ const Footer = ({ isArabic }: FooterProps) => {
   const text = content[isArabic ? 'ar' : 'en'];
 
   return (
-    <footer className="bg-gradient-to-b from-background to-muted/50 py-16 border-t border-border">
+    <footer className="bg-gradient-to-b from-background to-muted/50 py-16 border-t border-border" dir={isArabic ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-4">
         
         {/* الجزء العلوي */}

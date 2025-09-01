@@ -22,7 +22,7 @@ const HeroSection = ({ isArabic, scrollToSection }: HeroSectionProps) => {
         { icon: <Thermometer className="w-6 h-6 text-orange-200" />, text: "تدفئة 55°" },
         { icon: <Car className="w-6 h-6 text-green-200" />, text: "تعمل في السيارة" }
       ],
-      orderBtn: "اطلب الآن - خصم 35%",
+      orderBtn: "اطلب الآن - خصم 25%",
       videoBtn: "شاهد كيف تعمل",
       stats: [
         { value: "500000+", label: "عميل سعيد" },
@@ -35,15 +35,15 @@ const HeroSection = ({ isArabic, scrollToSection }: HeroSectionProps) => {
       title1: "Keep Your Drinks",
       title2: "Ice Cold",
       title3: "In The Harshest",
-      title4: "Temperatures!",
+      title4: "!Temperatures",
       subtitle: "Say Goodbye to Hot Drinks in Your Car",
-      description: "The revolutionary solution that ends all food and drink problems on your trips - advanced technology in an elegant and portable design.",
+      description: "The revolutionary solution that ends all food and drink problems on your trips - advanced technology in an elegant and portable design",
       features: [
         { icon: <Snowflake className="w-6 h-6 text-blue-200" />, text: "Cool 5°" },
         { icon: <Thermometer className="w-6 h-6 text-orange-200" />, text: "Heat 55°" },
         { icon: <Car className="w-6 h-6 text-green-200" />, text: "Car Compatible" }
       ],
-      orderBtn: "Order Now - 35% Off",
+      orderBtn: "Order Now - 25% Off",
       videoBtn: "See How It Works",
       stats: [
         { value: "500000+", label: "Happy Customers" },
