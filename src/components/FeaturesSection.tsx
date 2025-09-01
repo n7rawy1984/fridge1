@@ -32,7 +32,7 @@ const FeaturesSection = ({ isArabic }: FeaturesSectionProps) => {
       description: "Advanced technology and smart design make every trip a unique experience.",
       mainFeatures: [
         { title: "Cooling & Heating", subtitle: "Revolutionary 2-in-1 System", description: "From 5°C to 55°C! Keep your drinks & fruits cold in the summer or your meals hot in the winter." },
-        { title: "Plug & Play", subtitle: "12V Car Plug", description: "Just plug it into your car's cigarette lighter and go. Low power consumption that won't drain your battery." },
+        { title: "Plug & Play", subtitle: "12V Car Plug", description: "Just plug it into your car's cigarette lighter and go. Low power consumption." },
         { title: "Perfect Capacity", subtitle: "Holds up to 11 cans", description: "Enough space for your daily needs or a short family trip. Perfectly sized to not take space." },
         { title: "Portable & Lightweight", subtitle: "Only 2.15 kg", description: "Easy to carry from the car to the office, beach, or campsite. Comfortable design." }
       ],
