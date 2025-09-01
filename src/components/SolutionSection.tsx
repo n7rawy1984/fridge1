@@ -120,7 +120,7 @@ const SolutionSection = ({ isArabic, scrollToSection }: SolutionSectionProps) =>
   </div>
               
               {/* مؤشر التحكم */}
-              <div className="absolute top-1/4 left-8 transform -translate-y-1/2 mt-10">
+              <div className="absolute top-1/4 left-6 transform -translate-y-1/2 mt-10">
                 <div className="bg-white rounded-2xl p-4 shadow-xl border-2 border-primary/20 ">
                   <div className="text-center">
                     <div className="text-primary font-black text-lg mb-1"> {isArabic ? 'ساخن | بارد' : 'COOL/HOT'}</div>
