@@ -31,10 +31,10 @@ const FeaturesSection = ({ isArabic }: FeaturesSectionProps) => {
       subtitle: "It's Your Mobile Comfort Hub!",
       description: "Advanced technology and smart design make every trip a unique experience.",
       mainFeatures: [
-        { title: "Cooling & Heating", subtitle: "Revolutionary 2-in-1 System", description: "From 5°C to 55°C! Keep your drinks cold in the summer or your meals hot in the winter." },
+        { title: "Cooling & Heating", subtitle: "Revolutionary 2-in-1 System", description: "From 5°C to 55°C! Keep your drinks & fruits cold in the summer or your meals hot in the winter." },
         { title: "Plug & Play", subtitle: "12V Car Plug", description: "Just plug it into your car's cigarette lighter and go. Low power consumption that won't drain your battery." },
-        { title: "Perfect Capacity (7.5L)", subtitle: "Holds up to 11 cans", description: "Enough space for your daily needs or a short family trip. Perfectly sized to not take space." },
-        { title: "Portable & Lightweight", subtitle: "Only 2.15 kg", description: "Easy to carry from the car to the office, beach, or campsite. Comfortable design with a strong handle." }
+        { title: "Perfect Capacity", subtitle: "Holds up to 11 cans", description: "Enough space for your daily needs or a short family trip. Perfectly sized to not take space." },
+        { title: "Portable & Lightweight", subtitle: "Only 2.15 kg", description: "Easy to carry from the car to the office, beach, or campsite. Comfortable design." }
       ],
       additionalTitle: "More Features That Make It The Perfect Choice",
       additionalFeatures: [
@@ -79,7 +79,7 @@ const FeaturesSection = ({ isArabic }: FeaturesSectionProps) => {
         </div>
 
         {/* المميزات الرئيسية */}
-        <div className="grid grid-auto-fit gap-8 mb-16 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {text.mainFeatures.map((feature, index) => (
             <div 
               key={index}
